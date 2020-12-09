@@ -29,7 +29,7 @@ export const Results = () => {
             {
                 images.data.map((item, index) => {
                     return <Card
-                                key={index}
+                                key={index + item.dateTaken}
                                 {...item}
                             />
                 })

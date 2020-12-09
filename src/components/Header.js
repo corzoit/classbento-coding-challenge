@@ -1,10 +1,14 @@
-import React, { useState } from 'react'
+import React, { useContext } from 'react'
+import { SearchContext } from '../context/SearchContext';
 
 export const Header = () => {
-    const [keyword, setKeyword] = useState('');
+    const {keywords, dispatch} = useContext(SearchContext);
 
     const handleKeywordUpdate = (event) => {
-        setKeyword(event.target.value);
+        dispatch({
+            type: 'update',
+            payload: event.target.value
+        });
     }
 
     return (
@@ -13,7 +17,7 @@ export const Header = () => {
             <input
                 type="text"
                 className="form-control"
-                value={keyword}
+                value={keywords}
                 onChange={handleKeywordUpdate}
                 placeholder="Please enter a keyword to search"
             />

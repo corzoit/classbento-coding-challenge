@@ -1,27 +1,25 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
+
 import { getFlickrFeed } from '../services/getFlickrFeed'
+import { SearchContext } from '../context/SearchContext'
 import { Card } from './Card'
 
 export const Results = () => {
-
+    const {keywords} = useContext(SearchContext);
 
     const [images, setImages] = useState({
         data: [],
         loading: true
     });
 
-    const tag = "red";
-
     useEffect(() => {
-        // setTimeout(() => {
-            getFlickrFeed(tag).then(images => {
+            getFlickrFeed(keywords).then(images => {
                 setImages({
                     data: images,
                     loading: false
                 });
             });
-        // }, 1000)
-    }, [tag]);
+    }, [keywords]);
 
     console.log(images);
 

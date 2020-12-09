@@ -13,6 +13,11 @@ export const Results = () => {
     });
 
     useEffect(() => {
+            setImages({
+                data: [],
+                loading: true
+            });
+
             getFlickrFeed(keywords).then(images => {
                 setImages({
                     data: images,
@@ -20,8 +25,6 @@ export const Results = () => {
                 });
             });
     }, [keywords]);
-
-    console.log(images);
 
     return (
         <section className="mt-3">

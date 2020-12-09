@@ -1,4 +1,7 @@
 export const getFlickrFeed = async (tags) => {
+    if(!tags){
+        return [];
+    }
     // const url = `https://www.flickr.com/services/feeds/photos_public.gne?format=json&nojsoncallback=true&tags=${encodeURI(tags)}`;
     const url = `https://flickr-api-wrapper.corzo.dev/${encodeURI(tags)}`;
     const response = await fetch(url);

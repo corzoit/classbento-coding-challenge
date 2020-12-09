@@ -5,11 +5,16 @@ export const getFlickrFeed = async (tags) => {
     const {items} = await response.json();
 
     return items.map(node => {
+
+        // only get the email address, otherwise it looks poluted
+        const author = node.author.split(" ")[0];
+
         return {
             title: node.title,
             link: node.link,
             image: node.media.m,
-            author: node.author,
+            author: author,
+            description: node.description,
             dateTaken: node.date_taken,
             tags: node.tags,
         };

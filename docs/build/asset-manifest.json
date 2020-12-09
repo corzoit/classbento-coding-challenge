@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/classbento-coding-challenge/static/css/main.89dd44e9.chunk.css",
+    "main.js": "/classbento-coding-challenge/static/js/main.f9430094.chunk.js",
+    "main.js.map": "/classbento-coding-challenge/static/js/main.f9430094.chunk.js.map",
+    "runtime-main.js": "/classbento-coding-challenge/static/js/runtime-main.d033d6f2.js",
+    "runtime-main.js.map": "/classbento-coding-challenge/static/js/runtime-main.d033d6f2.js.map",
+    "static/js/2.a24accad.chunk.js": "/classbento-coding-challenge/static/js/2.a24accad.chunk.js",
+    "static/js/2.a24accad.chunk.js.map": "/classbento-coding-challenge/static/js/2.a24accad.chunk.js.map",
+    "index.html": "/classbento-coding-challenge/index.html",
+    "static/css/main.89dd44e9.chunk.css.map": "/classbento-coding-challenge/static/css/main.89dd44e9.chunk.css.map",
+    "static/js/2.a24accad.chunk.js.LICENSE.txt": "/classbento-coding-challenge/static/js/2.a24accad.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d033d6f2.js",
+    "static/js/2.a24accad.chunk.js",
+    "static/css/main.89dd44e9.chunk.css",
+    "static/js/main.f9430094.chunk.js"
+  ]
+}

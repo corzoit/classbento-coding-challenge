@@ -30,7 +30,10 @@ export const Results = () => {
             <div className="row">
             {
                 images.data.map((item, index) => {
-                    return <Card key={index} />
+                    return <Card
+                                key={index}
+                                {...item}
+                            />
                 })
             }
 
